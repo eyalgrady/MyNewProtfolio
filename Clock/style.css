@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto momo', monospace;
+}
+
+body {
+    background: #222831;
+    background: url(./images/pic3.jpg) center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: azure;
+}
+
+.main-container {
+    width: 40%;
+    min-width: 350px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #101010;
+}
+
+#clockContainer {
+    padding: 10%;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns-wrapper {
+    width: 40%;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+}
+
+.btns {
+    width: 40%;
+    background: #FFD369;
+    border: none;
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btns:hover {
+    box-shadow: 0 0 10px #FFD369;
+}
+
+.hiddenDiv {
+    width: 100%;
+    padding: 40px;
+    display: none;
+    /* opacity: 0; */
+    /* transition: max-height 0.5s ease, opacity 1.5s ease; */
+}
+
+/* < !--====================worldClock====================--> */
+
+#worldClockContainer {
+    width: 100%;
+}
+
+.worldClock-select {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.worldClock-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+select {
+    background: #222831;
+    color: azure;
+}
+
+.worldClock-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* < !--====================stopWatch====================--> */
+
+.stopwatch-display {
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.stopwatch-btns {
+    width: 80%;
+    display: flex;
+}
+
+.stopwatch-btns button {
+    font-size: 1em;
+    width: 100%;
+}
+
+.resetBtn {
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.startBtn {
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.pauseBtn {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+/* < !--====================countDownTimer====================--> */
+
+.countDown-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.countDownValues {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.countInput-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.count-input {
+    font-size: 2.5rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: 10px;
+    color: azure;
+    background: transparent;
+}
+
+.semicolon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+#countDownBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.6em;
+}
+
+/* < !--====================@media====================--> */
+
+@media (max-width:1200px) {
+
+    #clockContainer {
+        font-size: 3em;
+    }
+
+    .worldClock-select {
+        flex-direction: column;
+    }
+
+    .semicolon,
+    .count-input,
+    .worldClock-display,
+    .stopwatch-display {
+        font-size: 1.2em;
+    }
+}
