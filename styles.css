@@ -489,6 +489,17 @@ footer {
     margin-bottom: 20px;
   }
 
+  .backBtn,
+  .nextBtn {
+    /* display: none; */
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+  }
 
   #contact-wrapper form {
     margin-top: 0;
